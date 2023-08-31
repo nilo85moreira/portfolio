@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@300&display=swap');
+
+:root {
+    --cor-primaria: #181717;
+    --cor-secundaria: #3a3403; 
+    --cor-terciaria: #d2d4c6;
+    --cor-quartiaria: #faec69;
+    --cor-neutra: #f7f3d0;
+    --cor-destaque: #FCBF1E;
+    --fonte-primaria: 'Roboto', sans-serif;
+    --fonte-secundaria: 'Nunito Sans', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 30px 0 30px 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.cabecalho__menu_imagem {
+    
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.cabecalho__menu__link__destaque {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-destaque);
+}
+
+.cabecalho__menu__link:hover {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-quartiaria);
+    transform: scale(1.01);
+}
+
+.apresentacao {
+    border-top: 0.2px solid white;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    font-size: 2.15rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quartiaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-destaque);
+}
+
+.parte-amarela {
+    color: yellow; /* Cor amarela */
+}
+
+.parte-laranja {
+    color: orange; /* Cor laranja */
+}
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-neutra);
+    text-align: justify;
+
+}
+
+.apresentacao__conteudo__texto__menor {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-neutra);
+}
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-quartiaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    color: var(--cor-quartiaria);
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    gap: 8px;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 24px;
+    width: 35%;
+    padding: 8px 8px;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--cor-quartiaria);    
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    border: 2px solid var(--cor-destaque);  
+    transform: scale(1.01);
+}
+
+.apresentacao__imagem {
+    width: 30%;
+    border-radius: 15%;
+}
+
+.rodape {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 15px 15px 15px 15px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;    
+    
+}
+
+.rodape__logotipos {
+    width: 05%;
+    height: 05%;
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+}
+
+/* FORMULÁRIO */
+
+.form {
+    width: 512px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+.form input {
+    height: 25px;
+}
+
+.form input, .form textarea {
+    background-color: var(--cor-neutra);
+    border: 1px solid var(--cor-quartiaria);
+    border-radius: 10px;
+    padding: 01%;
+    margin-bottom: 05%;
+}
+
+.form input:focus, .form textarea:focus {
+    outline: 1px solid var(--cor-destaque);
+}
+
+.form button {
+    height: 3.5rem;
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 10px;
+}
+
+.form button:hover {
+    transform: scale(1.01);
+    font-weight: 600;
+}

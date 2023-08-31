@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site oficial de Danilo Moreira Emboava, Nilo Moreira">
+    <title>Nilo Moreira - contato</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <img class="cabecalho__menu_imagem" src="assets/logoNiloMoreira.png" alt="Logotipo Nilo Moreira">
+            <a class="cabecalho__menu__link" href="index.html">home</a>
+            <a class="cabecalho__menu__link" href="about.html">sobre</a>
+            <a class="cabecalho__menu__link" href="skills.html">habilidades</a>
+            <a class="cabecalho__menu__link__destaque">contato</a>
+        </nav> 
+    </header>
+        
+
+
+    <main class="apresentacao">
+        <div class="apresentacao__conteudo">
+            <h1 class="titulo" data-value="Contato" id="contato"></h1>
+                       
+            <form class="form" action="https://formsubmit.co/demboava@gmail.com" method="POST">
+
+              <label for="nome" class="apresentacao__conteudo__texto">Nome</label>              
+              <input type="text" name="name" id="nome" placeholder="Nome completo" required>
+              
+              <label for="email" class="apresentacao__conteudo__texto">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="E-mail para contato" required>
+
+              <label for="textarea" class="apresentacao__conteudo__texto">Mensagem</label>
+              <textarea name="message" id="textarea" cols="30" rows="05" placeholder="Escreva sua mensagem aqui"></textarea>
+              
+              <button type="submit" class="apresentacao__conteudo__texto__menor">Clique aqui para enviar</button>
+         </form>
+
+        </div>
+        
+    <img class="apresentacao__imagem" src="assets/foto_danilo.png" alt="Foto Danilo Moreira Emboava">        
+    </main>
+
+    <footer class="rodape">
+        <img src="assets/Logo_Alura_Include.svg" alt="Logotipo Alura Include">
+        <img class="rodape__logotipos" src="assets/logosenac.png" alt="Logotipo do Senac">
+        <p>Desenvolvido por:<br> Danilo Moreira Emboava</p>
+    </footer>
+
+    <script src="script/main.js"></script>
+    
+</body>
+</html>
